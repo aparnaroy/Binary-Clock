@@ -58,14 +58,6 @@ void display_time(int hours, int minutes, int seconds) {
 void display_12hr_time(int hours, int minutes, int seconds) {
     mode = 0;
     clear();
-    /*
-    attron(COLOR_PAIR(WHITE));
-    for (int x=0; x<100; x++) {
-        for (int y=0; y<100; y++) {
-            mvaddch(y,x,' ');
-        }
-    }
-    */
     
     if (hours>=12 && hours<24) {
         mode = 1;
